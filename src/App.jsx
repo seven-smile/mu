@@ -14,6 +14,15 @@ const App = () => {
                     </Typography>
                 </Toolbar>
             </AppBar>
+            <main>
+                <div>
+                    <Container maxWidth="sm">
+                        <Typography variant='h2' align='center' color='textPrimary' gutterButtom>
+                           Photo Album         
+                        </Typography>
+                    </Container>
+                </div>
+            </main>
         </>
     );
 }
