@@ -24,7 +24,7 @@ const App = () => {
                 </Toolbar>
             </AppBar>
             <main>
-                <div className={classess.container}>
+                <div className={classes.container}>
                     <Container maxWidth="sm">
                         <Typography variant='h2' align='center' color='textPrimary' gutterButtom>
                            Photo Album         
