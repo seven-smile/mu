@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, AppBar, Card, CardActions, CardMedia, CssBaseline, Grid,Toolbar, Container } from '@material-ui/core';
+import { Typography, AppBar, Button, Card, CardActions, CardMedia, CssBaseline, Grid,Toolbar, Container } from '@material-ui/core';
 import  {PhotoCamera}  from '@material-ui/icons';
 
 const App = () => {
@@ -23,6 +23,20 @@ const App = () => {
                         <Typography variant='h5' align='center' color='textSecondary' gutterButtom>
                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga possimus dolor eaque amet ipsa aperiam sint qui nemo magni atque distinctio quod dolore, hic pariatur, error id iste. Consectetur, laboriosam?       
                         </Typography>
+                        <div>
+                            <Grid container spacing={2} justify="center">
+                                <Grid item>
+                                    <Button variant='contained'color="primary">
+                                        See my Photos
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button variant='outlined'color="primary">
+                                        Secondary Action
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </div>
                     </Container>
                 </div>
             </main>
