@@ -3,6 +3,8 @@ import { Typography, AppBar, Button, Card, CardActions, CardMedia, CssBaseline, 
 import  {PhotoCamera}  from '@material-ui/icons';
 
 import useStyles from './styles';
+
+const cards =[ 1,2,3,4,5,6,7,8,9 ]
 const App = () => {
     const classes = useStyles();
     return (
@@ -43,23 +45,31 @@ const App = () => {
                 </div>
                 <Container className = {classes.cardGrid} maxWidth = "md">
                     <Grid constainer spacing={4}>
+                    {cards.map(() => (
                         <Grid item>
-                            <Card className={classes.card}>
-                                <CardMedia 
-                                    className={classes.cardMedia}
-                                    image="https://source.unsplash.com/random"
-                                    title="Image Title"
-                                />
-                                <CardContent className={classes.cardContent}>
-                                    <Typography gutterBottom variant='h5'>
-                                        Heading
-                                    </Typography>
-                                    <Typography>
-                                        Description on the Above item.
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
+                        <Card className={classes.card}>
+                            <CardMedia 
+                                className={classes.cardMedia}
+                                image="https://source.unsplash.com/random"
+                                title="Image Title"
+                            />
+                            <CardContent className={classes.cardContent}>
+                                <Typography gutterBottom variant='h5'>
+                                    Heading
+                                </Typography>
+                                <Typography>
+                                    Description on the Above item.
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small" color="primary">View</Button>
+                                <Button size="small" color="primary">Edit</Button>
+                            </CardActions>
+                        </Card>
+                    </Grid>
+
+                    ))}
+                        
                     </Grid>
                 </Container>
             </main>

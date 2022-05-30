@@ -14,6 +14,20 @@ const usestyles = makeStyles((theme) => ({
         marginTop: "40px"
 
     },
+    cardGrid: {
+        padding: "20px 0"
+    },
+    card: {
+        height: "100%",
+        display: "flex",
+        flexDirection: "column"
+    },
+    cardMedia: {
+        paddingTop: "56.25%" // 16:9 (the viewing default of most monitors)
+    },
+    cardContent: {
+    flexGrow: 1,
+    },
 }));
 
 export default usestyles;
