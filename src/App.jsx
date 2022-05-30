@@ -1,8 +1,8 @@
 import React from 'react';
-import { Typography, AppBar, Button, Card, CardActions, CardMedia, CssBaseline, Grid,Toolbar, Container } from '@material-ui/core';
+import { Typography, AppBar, Button, Card, CardActions, CardMedia, CssBaseline, Grid,Toolbar, Container, CardContent } from '@material-ui/core';
 import  {PhotoCamera}  from '@material-ui/icons';
 
-import usestyles from './styles';
+import useStyles from './styles';
 const App = () => {
     const classes = useStyles();
     return (
@@ -41,6 +41,27 @@ const App = () => {
                         </div>
                     </Container>
                 </div>
+                <Container className = {classes.cardGrid} maxWidth = "md">
+                    <Grid constainer spacing={4}>
+                        <Grid item>
+                            <Card className={classes.card}>
+                                <CardMedia 
+                                    className={classes.cardMedia}
+                                    image="https://source.unsplash.com/random"
+                                    title="Image Title"
+                                />
+                                <CardContent className={classes.cardContent}>
+                                    <Typography gutterBottom variant='h5'>
+                                        Heading
+                                    </Typography>
+                                    <Typography>
+                                        Description on the Above item.
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                    </Grid>
+                </Container>
             </main>
         </>
     );
