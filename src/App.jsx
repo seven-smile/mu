@@ -31,7 +31,7 @@ const App = () => {
                             <Grid container spacing={2} justify="center">
                                 <Grid item>
                                     <Button variant='contained'color="primary">
-                                        See my Photos
+                                        Check out my Photos
                                     </Button>
                                 </Grid>
                                 <Grid item>
